@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import '../../node_modules/normalize.css/normalize';
+
+%roboto-400 {
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  resize: none;
+  outline: none;
+  text-decoration: none;
+}
+
+body {
+  font-size: 16px;
+  color: #fefefe;
+  @extend %roboto-400;
+  background: linear-gradient(140deg, #677AE3, #754FA6);
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1460px;
+  padding: 0 10px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.wrapper {
+  min-height: inherit;
+ .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: inherit;
+ } 
+}
+
+.cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: inherit;
+}
+
+.card {
+  min-height: inherit;
+  flex: 1 1 25%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  transition: flex .5s;
+  &:hover {
+    flex: 1 1 100%;
+  }
+}
